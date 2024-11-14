@@ -16,6 +16,7 @@ sns.heatmap(combined_data.corr(), annot=True, cmap='coolwarm')
 plt.title('Correlation Heatmap')
 plt.show()
 
+
 # Scatter plots for selected columns
 sns.pairplot(combined_data)
 plt.show()
