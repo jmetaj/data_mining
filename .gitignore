@@ -1,0 +1,9 @@
+# Ignore Python virtual environment folder
+myenv/
+
+# Ignore other common Python-related files and folders
+_pycache_/
+
+
+
+

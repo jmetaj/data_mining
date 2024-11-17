@@ -8,13 +8,21 @@ def load_combined_data(data_path='harth'):
     combined_data = pd.concat(dataframes, ignore_index=True)
     return combined_data
 
-# Main block to load data and print stats if running this script directly
+# Clean and remove unnecessary columns
+def clean_combined_data(data_path='harth'):
+    combined_data = load_combined_data(data_path)
+    # Drop columns that are not needed
+    columns_to_drop = ['index', 'Unnamed: 0']
+    combined_data = combined_data.drop(columns=[col for col in columns_to_drop if col in combined_data.columns])
+    return combined_data
+
+
 if __name__ == "__main__":
-    combined_data = load_combined_data()
+    combined_data = clean_combined_data()
     
-    # Display the first few rows
+    
     print(combined_data.head())
     
-    # Compute and display basic statistics
+    # Compute and display basic statistics 
     summary_stats = combined_data.describe()
     print(summary_stats)
