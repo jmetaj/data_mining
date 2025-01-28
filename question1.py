@@ -2,16 +2,14 @@ from data_processing import clean_combined_data
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load and clean combined_data 
+# Load and clean data 
 combined_data = clean_combined_data()
 
-# Create a sample of the data to use for the pairplot
 sampled_data = combined_data.sample(n=1000, random_state=42)
 
 # Ensure only numeric data is used 
 numeric_data = combined_data.select_dtypes(include=['number'])
 
-# Plot histograms 
 combined_data.hist(bins=30, figsize=(15, 10))
 plt.suptitle('Histograms of All Numeric Columns')
 plt.show()
