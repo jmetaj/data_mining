@@ -1,12 +1,14 @@
-# Ignore Python virtual environment folder
-myenv/
-
 # Ignore Python cache directories
 __pycache__/
+**/__pycache__/
+
+# Ignore dataset folder
+harth/
 
 # Ignore log files and directories
 logs/
+**/logs/
 
 
-
-
+# Ignore Python virtual environment folder
+myenv/
