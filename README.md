@@ -5,7 +5,7 @@
 ---
 
 ## 📂 Δομή Έργου
-- `question1.py` → **Ανάλυση δεδομένων & οπτικοποιήσεις** 📊  
+- `question1.py` → **Ανάλυση δεδομένων**  
 - `question2.ipynb` → **Μοντέλα ταξινόμησης (Neural Networks, Random Forest, Bayesian Networks)** 🤖  
 - `question3.ipynb` → **Ομαδοποίηση συμμετεχόντων** 📈  
 - `requirements.txt` → **Λίστα με τις απαιτούμενες βιβλιοθήκες** 📦  
